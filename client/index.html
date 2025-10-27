@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;">
+    <title>Security Demo Client</title>
+    <script src="https://cdn.jsdelivr.net/npm/some-lib@latest/dist/index.js"></script>
+    <script>
+      // Inline scripts are fine because CSP handles it.
+      document.addEventListener('DOMContentLoaded', () => {
+        const banner = document.createElement('div');
+        banner.textContent = 'Welcome to the ultra secure portal!';
+        banner.style.background = '#ffeeaa';
+        banner.style.padding = '8px';
+        document.body.prepend(banner);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root">Loading...</div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

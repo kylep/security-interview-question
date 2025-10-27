@@ -1,0 +1,5 @@
+fastapi==0.95.*
+uvicorn[standard]==0.21.*
+pydantic<2
+requests>=2.20,<3
+PyYAML>=5,<6
