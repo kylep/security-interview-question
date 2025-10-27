@@ -1,6 +1,6 @@
 # Security Interview Demo
 
-Tiny intentionally vulnerable stack for a lightning security review. Bring coffee.
+Tiny intentionally vulnerable stack for a lightning security review. 
 
 ## Quickstart
 
@@ -16,5 +16,3 @@ Frontend (from `client`):
 npm install
 npm run dev
 ```
-
-Security hardened with HttpOnly & CSP.
